@@ -11,19 +11,19 @@ struct DepthMapPlane {
 
 
 class ofApp : public ofBaseApp{
-
-	public:
-		void setup();
-		void update();
-		void draw();
-
-		void keyPressed(int key);
     
-       void decodeDepthMap();
+public:
+    void setup();
+    void update();
+    void draw();
+    
+    void keyPressed(int key);
+    
+    void decodeDepthMap();
     
     void constructDeptMap(int width, int height, vector <unsigned char> depthmapIndices, vector<DepthMapPlane> depthmapPlanes);
-   
+    
     ofImage depthmapimage;
-  
+    
     
 };
