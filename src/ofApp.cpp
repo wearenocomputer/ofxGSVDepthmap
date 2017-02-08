@@ -95,7 +95,7 @@ void ofApp::constructDeptMap(int width, int height, vector <unsigned char> depth
     for (int y = 0; y < height; ++y) {
         for (int x = 0; x < width; ++x) {
             
-            float xnormalize = x/(width-1.0f);
+            float xnormalize = (width-x-1.0f)/(width-1.0f);
             float ynormalize =(height-y-1.0f)/(height-1.0f);
             
             float theta = xnormalize * (2 * PI) + (PI / 2);
